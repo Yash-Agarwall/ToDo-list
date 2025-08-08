@@ -28,6 +28,7 @@ git clone https://github.com/Yash-Agarwall/ToDo-list.git
 Open the project
 Simply open index.html in your browser.
 
-🌐 Live Demo
-🔗 Try the App Here
+🌐 Live Demo  
+[Click here to try the app](https://to-do-list-hazel-six.vercel.app)
+
  
