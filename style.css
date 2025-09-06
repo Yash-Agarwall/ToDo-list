@@ -1,132 +1,192 @@
-body{
-    text-align: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  text-align: center;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
 }
-h1{
-    color: white;
+h1 {
+  color: white;
 }
-.parent{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid wheat;
-    margin: 0  250px;
-    border-radius: 40px;
-    box-shadow: 0 0 3px rgb(240, 21, 229), 0 0 7px, 0 0 13px rgb(240, 21, 229);
-    background-color: wheat;
+.parent {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid wheat;
+  margin: 0 250px;
+  border-radius: 40px;
+  box-shadow: 0 0 3px rgb(240, 21, 229), 0 0 7px, 0 0 13px rgb(240, 21, 229);
+  background-color: wheat;
 }
-.input{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* fl */
-    margin: 20px;
-    
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* fl */
+  margin: 20px;
 }
-.input input{
-    flex-grow: 1;
-    height: 20px;
-    border: 0.5px solid black;
-    background-color: black;
-    /* border: none; */
-    color: wheat;
-    border-radius: 20px;
-    font-size: 12px;
-    padding: 7px 13px;
+.input input {
+  flex-grow: 1;
+  height: 20px;
+  border: 0.5px solid black;
+  background-color: black;
+  /* border: none; */
+  color: wheat;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 7px 13px;
 }
-.input input::placeholder{
-    color:wheat;
+.input input::placeholder {
+  color: wheat;
 }
 .done-checkbox {
-    margin-right: 10px;
-    transform: scale(1.2);
-    cursor: pointer;
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
 }
-.container div{
-    padding: 10px ;
-    margin: 7px 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 2px solid black;
-    border-radius: 20px;
-    /* background-color: rgb(155, 6, 248);
-     */
-    color: black;
+.container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 7px 0;
+  color: black;
 }
-.container div span{
-    display: flex;
-    flex-grow: 1;
+.container div span {
+  display: flex;
+  flex-grow: 1;
 }
+
 .edit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 1.8rem;
-    width: 1.8rem;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 5px;
+  border-radius: 50%;
+  background: #1c1c1c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgba(240, 21, 229, 0.5);
 }
-.del{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 1.8rem;
-    width: 1.8rem;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid black;
+.save {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 5px;
+  border-radius: 50%;
+  background: #1c1c1c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgba(240, 21, 229, 0.5);
 }
-.container{
-
-    margin: 20px;
-
+.del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 5px;
+  border-radius: 50%;
+  background: #1c1c1c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgba(240, 21, 229, 0.5);
 }
-#add{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    height: 1.8rem;
-    width: 1.8rem;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid black;
-    
+.container {
+  margin: 20px;
 }
-#add span{
-    border-radius: 50%;
-    font-size: 1.4rem;
+#add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 5px;
+  border-radius: 50%;
+  background: #1c1c1c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgba(240, 21, 229, 0.5);
 }
-#clearAll{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 1.8rem;
-    width: 1.8rem;
-    margin: 5px;
-    border-radius: 50%;
-    border: none;
-    background-color: black;
+#add span {
+  border-radius: 50%;
+  font-size: 1.4rem;
 }
-#clearAll span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.4rem;
-    background-color: black;
+#clearAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 1.8rem;
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  background: #1c1c1c;
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px rgba(240, 21, 229, 0.5);
+}
+#clearAll span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background-color: black;
 }
 
 .material-symbols-outlined {
-    border-radius: inherit;
-    background-color: black;
-    color: wheat;
+  border-radius: inherit;
+  background-color: black;
+  color: wheat;
+}
+
+.done-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #f015e5;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  /* position: relative; */
+  display: flex;
+  flex-shrink: 0;
+}
+
+.done-checkbox:hover {
+  box-shadow: 0 0 6px #f015e5, 0 0 12px rgba(240, 21, 229, 0.5);
+}
+
+.done-checkbox:checked {
+  background: #d908ec;
+  border-color: #d908ec;
+  box-shadow: 0 0 8px #d908ec;
+}
+
+.done-checkbox:checked::after {
+  content: "✓";
+  /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  transform: translate(3px, -1px);
+}
+
+.container div span {
+  flex-grow: 1;
+  font-size: 15px;
+  font-weight: 500;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
